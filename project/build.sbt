@@ -7,3 +7,5 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.1.6")
 addSbtPlugin("com.typesafe.sbt" % "sbt-osgi" % "0.7.0")
 
 addSbtPlugin("com.typesafe" % "sbt-sdlc" % "0.1")
+
+resolvers += Resolver.url("bintray-sbt-plugins", url("https://dl.bintray.com/sbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)

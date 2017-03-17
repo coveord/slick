@@ -23,7 +23,7 @@ trait ReadAheadIterator[+T] extends BufferedIterator[T] {
     else throw new NoSuchElementException("head on empty iterator")
   }
 
-  def headOption: Option[T] = {
+  override def headOption: Option[T] = {
     update()
     if(state == 1) Some(cached)
     else None
