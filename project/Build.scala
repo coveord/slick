@@ -12,7 +12,7 @@ import com.typesafe.sbt.sdlc.Plugin._
 
 object SlickBuild extends Build {
 
-  val slickVersion = "2.1.0"
+  val slickVersion = "2.1.0-coveo"
   val binaryCompatSlickVersion = "2.1.0" // Slick base version for binary compatibility checks
   val scalaVersions = Seq("2.12.1")
 
